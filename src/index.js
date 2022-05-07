@@ -6,7 +6,7 @@ const HTTP = require("./constants");
 // Decorate with Functions
 //
 
-HTTP.getHeaderFrom = require("./getHeaderFrom.function");
+HTTP.getHeaderFrom = require("./functions/getHeaderFrom.function");
 
 //
 //

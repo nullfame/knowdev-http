@@ -24,7 +24,7 @@ Case-insensitive search inside `searchObject` for `headerKey`.  Also looks in `h
 
 | Version | Change |
 | ------- | ------ |
-| 1.1.0   | Add `getHeaderFrom()` function |
+| 1.1.1   | Add `getHeaderFrom()` function (`1.1.0` had broken export) |
 | 1.0.0   | Initial release of constants only |
 
 ## 🛣 Roadmap
