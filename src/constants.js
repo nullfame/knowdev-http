@@ -64,6 +64,7 @@ const HTTP = {
     POSTMAN: {
       TOKEN: "Postman-Token",
     },
+    POWERED_BY: "X-Powered-By",
     PROJECT: {
       ACCOUNT: "X-Project-Account",
       CALLER: "X-Project-Caller",
