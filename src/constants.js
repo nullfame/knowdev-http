@@ -74,6 +74,7 @@ const HTTP = {
       HANDLER: "X-Project-Handler",
       INVOCATION: "X-Project-Invocation",
       ROOT_INVOCATION: "X-Project-Root-Invocation",
+      SECRET: "X-Project-Secret",
       SESSION: "X-Project-Session",
       VERSION: "X-Project-Version",
     },
