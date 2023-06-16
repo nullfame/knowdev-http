@@ -78,6 +78,10 @@ const HTTP = {
       SESSION: "X-Project-Session",
       VERSION: "X-Project-Version",
     },
+    SIGNATURE: {
+      ED25519: "X-Signature-Ed25519",
+      TIMESTAMP: "X-Signature-Timestamp",
+    },
     VIA: "Via",
   },
   METHOD: {
