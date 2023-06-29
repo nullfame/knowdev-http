@@ -24,7 +24,7 @@ Case-insensitive search inside `searchObject` for `headerKey`.  Also looks in `h
 
 | Version | Change |
 | ------- | ------ |
-| 1.1.4   | Catch errors thrown by `getHeaderFrom()` |
+| 1.2.0   | Catch errors thrown by `getHeaderFrom()`, minor upgrades and cleanup |
 | 1.1.3   | Add `HTTP.HEADER.SIGNATURE.ED25519`, `HTTP.HEADER.SIGNATURE.TIMESTAMP` |
 | 1.1.2   | Add `HTTP.CODE.UNAUTHORIZED`, `HTTP.HEADER.PROJECT.SECRET` |
 | 1.1.1   | Add `getHeaderFrom()` function (`1.1.0` had broken export) |
