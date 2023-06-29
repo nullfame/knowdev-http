@@ -71,4 +71,13 @@ describe("GetHeaderFrom function", () => {
     const response = await getHeaderFrom("bogus", event);
     expect(response).toBeUndefined();
   });
+  it("Won't crash if searchObject is missing (undefined)", () => {
+    getHeaderFrom("bogus");
+  });
+  it("Won't crash if searchObject is not an object", () => {
+    getHeaderFrom("bogus", 12);
+  });
+  it("Won't crash if searchObject is null", () => {
+    getHeaderFrom("bogus", null);
+  });
 });

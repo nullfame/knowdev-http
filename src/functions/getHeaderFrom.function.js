@@ -6,6 +6,9 @@ const cloneDeep = require("lodash.clonedeep");
 //
 
 const getHeaderFrom = (headerKey, searchObject) => {
+  // Validate
+  if (!searchObject || typeof searchObject !== "object") return undefined;
+
   const searchKey = headerKey.toLowerCase();
   // eslint-disable-next-line no-param-reassign
   searchObject = cloneDeep(searchObject);
