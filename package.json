@@ -12,13 +12,16 @@
     "test": "jest src/",
     "test:clean": "rimraf coverage/",
     "test:coverage": "jest --coverage src/",
+    "test:spec:formatError.function": "jest ./src/functions/__tests__/formatError.function.spec.js",
     "test:spec:getHeaderFrom.function": "jest ./src/functions/__tests__/getHeaderFrom.function.spec.js",
     "postversion": "npm publish"
   },
   "dependencies": {
+    "jsonapi-serializer": "^3.6.7",
     "lodash.clonedeep": "^4.5.0"
   },
   "devDependencies": {
+    "@knowdev/errors": "^1.4.0",
     "eslint": "^8.43.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
@@ -28,6 +31,7 @@
     "hygen": "^6.1.0",
     "jest": "^29.5.0",
     "jest-extended": "^4.0.0",
+    "jest-json-schema": "^6.1.0",
     "prettier": "^2.4.1",
     "rimraf": "^5.0.1",
     "sort-package-json": "^2.4.1"
