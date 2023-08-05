@@ -1,4 +1,32 @@
-/* eslint-disable global-require */
+const { InternalError } = require("@knowdev/errors");
+const { matchers } = require("jest-json-schema");
+const formatError = require("../formatError.function");
+
+//
+//
+// Configuration
+//
+
+expect.extend(matchers);
+
+const jsonApiErrorSchema = {
+  type: "object",
+  properties: {
+    errors: {
+      type: "array",
+      items: {
+        type: "object",
+        properties: {
+          status: { type: "number" },
+          title: { type: "string" },
+          detail: { type: "string" },
+        },
+        required: ["status", "title"],
+      },
+    },
+  },
+  required: ["errors"],
+};
 
 //
 //
@@ -29,10 +57,10 @@ afterEach(() => {
 //
 
 describe("FormatError function", () => {
-  it("Works", async () => {
-    const formatError = require("../formatError.function");
-    const response = await formatError();
-    console.log("response :>> ", response);
-    expect(response.statusCode).toBe(200);
+  it("Works", () => {
+    const response = formatError(new InternalError());
+    expect(response).toBeObject();
+    expect(response.status).toBeNumber();
+    expect(response.data).toMatchSchema(jsonApiErrorSchema);
   });
 });
