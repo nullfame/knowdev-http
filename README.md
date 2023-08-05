@@ -12,6 +12,10 @@ npm install --save @knowdev/http
 
 ### Functions 🛠
 
+#### formatError(error:ProjectError)
+
+Returns an object with a numeric `status` and and object `data` suitable for a JSON:API-complaint HTTP response
+
 #### getHeaderFrom(headerKey:string, searchObject:object)
 
 Case-insensitive search inside `searchObject` for `headerKey`.  Also looks in `header` and `headers` child object of `searchObject`, if `headerKey` not found at top-level.
