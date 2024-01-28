@@ -13,8 +13,7 @@
     "test:clean": "rimraf coverage/",
     "test:coverage": "jest --coverage src/",
     "test:spec:formatError.function": "jest ./src/functions/__tests__/formatError.function.spec.js",
-    "test:spec:getHeaderFrom.function": "jest ./src/functions/__tests__/getHeaderFrom.function.spec.js",
-    "postversion": "npm publish"
+    "test:spec:getHeaderFrom.function": "jest ./src/functions/__tests__/getHeaderFrom.function.spec.js"
   },
   "dependencies": {
     "jsonapi-serializer": "^3.6.7",
