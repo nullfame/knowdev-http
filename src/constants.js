@@ -82,6 +82,7 @@ const HTTP = {
       ED25519: "X-Signature-Ed25519",
       TIMESTAMP: "X-Signature-Timestamp",
     },
+    USER_AGENT: "User-Agent",
     VIA: "Via",
   },
   METHOD: {
